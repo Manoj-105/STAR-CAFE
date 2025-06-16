@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Menu</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #24160d, #a77e58); /* Warm café-style gradient */
+            color: #25160e;
+            padding: 20px;
+        }
+
+        /* Menu container */
+        .menu {
+            max-width: 800px;
+            margin: 40px auto;
+            background: rgba(255, 250, 240, 0.95);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(146, 71, 71, 0.2);
+            text-align: center;
+        }
+
+        /* Heading styling */
+        .menu h1 {
+            font-size: 50px;
+            color: #7b4a2d;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Menu sections */
+        .menu-section {
+            margin: 30px 0;
+        }
+
+        .menu-section h2 {
+            font-size: 30px;
+            color: #5c4033;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #a77e58;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Menu items list */
+        .menu-items {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-items li {
+            font-size: 18px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Item names and prices */
+        .menu-items li span {
+            color: #7b4a2d;
+        }
+
+        .menu-items li span.price {
+            color: #5c4033;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #5c4033;
+        }
+        @media (max-width: 768px) {
+            .menu {
+                padding: 20px;
+                margin: 20px auto;
+            }
+            .menu h1 {
+                font-size: 36px;
+            }
+            .menu-section h2 {
+                font-size: 24px;
+            }
+            .menu-items li {
+                font-size: 16px;
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu-items li span {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu {
+                padding: 15px;
+            }
+            .menu h1 {
+                font-size: 30px;
+            }
+            .menu-section h2 {
+                font-size: 20px;
+            }
+            .menu-items li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>Star Café Menu</h1>
+
+        <!-- Coffee Section -->
+        <div class="menu-section">
+            <h2>COFFEE</h2>
+            <ul class="menu-items">
+                <li><span>Hot Coffee</span><span class="price">₹20/-</span></li>
+                <li><span>Cold cCoffee</span><span class="price">₹80/-</span></li>
+                <li><span>Chocolate Coffee</span><span class="price">₹80/-</span></li>
+               
+            </ul>
+        </div>
+
+        <!-- Snacks Section -->
+        <div class="menu-section">
+            <h2>COLD DRINKS</h2>
+            <ul class="menu-items">
+                <li><span>Thumsup</span><span class="price">₹20/-Per Glass</span></li>
+                <li><span>Pepsi</span><span class="price">₹20/-Per Glass</span></li>
+                <li><span>Maza</span><span class="price">₹20/-Per Glass</span></li>
+                <li><span>Frooty</span><span class="price">₹20/-Per Glass</span></li>
+                <li><span>Coca Cola</span><span class="price">₹20/-Per Glass</span></li>
+            </ul>
+        </div>
+
+        <!-- Beverages Section -->
+        <div class="menu-section">
+            <h2>JUICE</h2>
+            <ul class="menu-items">
+                <li><span>Pineapple</span><span class="price">₹50/-Per Glass</span></li>
+                <li><span>Banana </span><span class="price">₹50/-Per Glass</span></li>
+                <li><span>Orange</span><span class="price">₹50/-Per Glass</span></li>
+                <li><span>Mix Fruit</span><span class="price">₹50/-Per Glass</span></li>
+              
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h2>SHAKE</h2>
+            <ul class="menu-items">
+                <li><span>Choclate</span><span class="price">₹60/-</span></li>
+                <li><span>Milk Shake</span><span class="price">₹60/-</span></li>
+              
+              
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h2>pizza</h2>
+            <ul class="menu-items">
+                <li><span>Onion Pizza</span><span class="price">₹120/-</span></li>
+                <li><span>Cheese & Tomato Pizza </span><span class="price">₹130/-</span></li>
+                <li><span>Cheese & Sweet Corn Pizza</span><span class="price">₹140/-</span></li>
+                <li><span>Star Cafe Special pizza</span><span class="price">₹160/-</span></li>
+                <li><span>Double Cheese Pizza</span><span class="price">₹180/-</span></li>
+              
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h2>BURGER</h2>
+            <ul class="menu-items">
+                <li><span>Veg Burger</span><span class="price">₹40/-</span></li>
+                <li><span>Cheese Burger</span><span class="price">₹50/-</span></li>
+                <li><span>Paneer Burger</span><span class="price">₹60/-</span></li>
+               
+              
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h2>SANDWICH</h2>
+            <ul class="menu-items">
+                <li><span>Veg Sandwich</span><span class="price">₹40/-</span></li>
+                <li><span>Cheese Sandwich </span><span class="price">₹50/-</span></li>
+                <li><span>Veg Paneer Sandwich</span><span class="price">₹60/-</span></li>
+            
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h2>PATTIES</h2>
+            <ul class="menu-items">
+                <li><span>Aloo Patties</span><span class="price">₹20/-</span></li>
+                <li><span>Masala Patties </span><span class="price">₹25/-</span></li>
+                <li><span>Paneer patties</span><span class="price">₹30/-</span></li>
+                <li><span>Cheese patties</span><span class="price">₹35/-</span></li>
+            
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h2>NOODLES & MAGGI</h2>
+            <ul class="menu-items">
+                <li><span>Tomato Chaumin </span><span class="price">₹40/-</span></li>
+                <li><span>Masala Chaumin </span><span class="price">₹40/-</span></li>
+                <li><span>Plain Maggi</span><span class="price">₹30/-</span></li>
+                <li><span>Masala maggi</span><span class="price">₹40/-</span></li>
+                <li><span>Tomato Maggi</span><span class="price">₹40/-</span></li>
+                <li><span>Cheese maggi</span><span class="price">₹40/-</span></li>
+                <li><span>Paneer maggi</span><span class="price">₹50/-</span></li>
+                <li><span>HD Special maggi</span><span class="price">₹65/-</span></li>
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h2>PASTA</h2>
+            <ul class="menu-items">
+                <li><span>Plain Pasta </span><span class="price">₹40/-</span></li>
+                <li><span>Red Pasta</span><span class="price">₹50/-</span></li>
+            
+            </ul>
+        </div>
+        <div class="menu-section">
+            <h2>CAKE</h2>
+            <ul class="menu-items">
+                <li><span>Choclate Cake </span><span class="price">ON MRP</span></li>
+                <li><span>Vanilla Cake</span><span class="price">ON MRP</span></li>
+                <li><span>Starawberry Cake</span><span class="price">ON MRP</span></li>
+            
+            </ul>
+        </div>
+        
+
+
+        <div class="footer">
+            <p>Visit us at Star Café for the best coffee experience!</p>
+        </div>
+    </div>
+</body>
+</html>

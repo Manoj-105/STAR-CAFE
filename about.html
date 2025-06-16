@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to bottom, #3e1e00, #d2a679);
+    color: #5c4033;
+    line-height: 1.8;
+    margin: 0; /* पहले जो padding थी उसे हटाया */
+    display: flex;
+    flex-direction: column; /* नेवबार और marquee को ऊपर सही करने के लिए */
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+/* Marquee Styling */
+
+
+
+        .ab {
+            margin-top: 100px;
+            text-align: center;
+            background: rgba(255, 250, 240, 0.95);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 90%;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .ab h2 {
+            font-size: 50px;
+            color: #7b4a2d;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            animation: slideIn 1.2s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .ab p {
+            font-size: 1.3rem;
+            color: #5c4033;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .ab img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .ab img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .ab {
+                padding: 20px;
+            }
+
+            .ab h2 {
+                font-size: 32px;
+            }
+
+            .ab p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    
+    
+    <div class="ab">
+        <h2>ABOUT US</h2>
+        <p>Welcome to [Star Cafe] – where every cup tells a story! <br>
+            Humein sirf ek cafe nahi, balki ek aise jagah banane par garv hai jahan log na sirf coffee ka maza lein, balki khud ko relax aur refreshed feel karein. Hamari journey shuru hui thi ek simple vision ke saath: logon ko ek warm aur inviting space provide karna, jahan dosto ke saath baithkar baatein ho, kam ke beech ek refreshing break mile, aur har sip ke saath ek nayi energy ka ehsaas ho.
+            
+            Hamari speciality hai carefully sourced, freshly brewed coffee aur handpicked ingredients se banaye gaye dishes jo aapke har mood ke liye perfect hain. Chahe aapke din ki shuruaat ek perfect cappuccino ke saath ho ya shaam ka maza ek soothing latte ke saath, hum aapke har moment ko memorable banane ke liye yahan hain.
+            
+          <br>  [Star Cafe] aapka second home banane ke liye tayar hai. Har ek corner mein humne apni creativity aur passion invest kiya hai – cozy interiors, soulful music aur friendly staff ka perfect combination aapko ghar jaisi feeling dega.
+            
+            Aapke saath ek cup coffee share karne ka intezaar hai – [Star Cafe] mein milte hain!
+        </p>
+        <img src="sc.jpg" alt="star">
+        <img src="ss.jpg" alt="cafe">
+    </div>
+</body>
+</html>

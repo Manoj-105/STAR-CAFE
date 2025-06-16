@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Cafe</title>
+   <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body background and font styling */
+        body {
+            font-family: 'Georgia', serif;
+            background: #fdf1f1; /* Soft creamy background */
+            color: #5c4033; /* Warm coffee-brown text */
+            line-height: 1.8;
+        }
+
+        /* Heading styles */
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            color: #5c4033; /* Warm coffee-brown */
+            margin-top: 40px;
+            
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+        }
+
+       /* Navigation bar styling */
+nav {
+    background: linear-gradient(to right, #1b0d05, #7b4a2d); /* Coffee-inspired gradient */
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff; /* White for contrast */
+    text-transform: uppercase;
+    font-family: 'Cursive', sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 6px rgba(151, 52, 52, 0.3); /* Subtle shadow */
+
+    
+}
+
+.logo-img {
+    width: 90px; /* Adjust logo size */
+    height: auto;
+    margin-right: 10px; /* Space between logo and text */
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+/* Navigation links styling */
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff; /* White text */
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d8a374; /* Light caramel hover effect */
+    color: #5c4033; /* Brown text on hover */
+}
+
+        /* Main content container */
+        .image-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px auto;
+            padding: 30px;
+            
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+        }
+        .image-section {
+            margin-bottom: 100px;
+           padding: 20px;
+           background: linear-gradient(to right, #2e2525, #522911);
+        }
+        .image-section2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px auto;
+            padding: 30px;
+            
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 90%;
+        }
+        .image-section2 {
+            margin-bottom: 100px;
+           padding: 20px;
+           background: linear-gradient(to right, #2c1816, #20120a);
+        }
+
+        /* Image styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(24, 10, 10, 0.952);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 700px;
+            height: 400px;
+            margin: 60px;
+        }
+
+        img:hover {
+            transform: scale(1.05); /* Slight zoom effect */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Caption text below image */
+        .caption {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #7b4a2d; /* Rich coffee-brown */
+            font-style: italic;
+        }
+
+        /* Responsive design for smaller screens */
+      
+
+            
+        /* Footer styling */
+        footer {
+            background: linear-gradient(to right, #1d1009, #7b4a2d);
+            height: 170px;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+            margin: 10px;
+            text-decoration: none;
+        
+        }
+
+        .social-icons a:hover {
+            color: #203eb8; /* Light caramel hover effect */
+        }
+        
+       marquee {
+        font-size: 50px;
+        margin-top: 20px;
+        
+       }
+       /* Responsive design for smaller screens */
+       @media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 20px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .logo-img {
+        width: 60px;
+        margin-right: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row; /* Links को एक लाइन में रखने के लिए */
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        margin-top: 10px; 
+        margin-left: 50px;/* H1 के पास लाने के लिए */
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+    }
+
+    img {
+        max-width: 100%;
+        height: 120px;
+        width: 70%;
+        margin: 20px 0;
+    }
+
+    .image-section, .image-section2 {
+        padding: 10px;
+        margin-bottom: 50px;
+        height: 180px;
+        width: 80%;
+    }
+
+    marquee {
+        font-size: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: 260px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+        
+      
+    }
+
+    address {
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="WhatsApp Image 2025-01-20 at 8.33.00 AM.jpeg" alt="Star Cafe Logo" class="logo-img"> <!-- Add your logo image here -->
+            Star Cafe
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    
+    <marquee direction="left">WELCOME TO STAR CAFE</marquee>
+    
+    
+
+    <div class="image-section">
+        <img src="menu.jpg" alt="Cozy cafe interior">
+    </div>
+    <div class="image-section2">
+        <img src="coffee png.jpg" alt="Cozy cafe interior">
+    </div>
+    <div class="image-section2">
+        <img src="pizza.jpg" alt="Cozy cafe interior">
+    </div>
+    <div class="image-section2">
+        <img src="burger.jpg" alt="Cozy cafe interior">
+    </div>
+    <div class="image-section2">
+        <img src="patties.jpg" alt="Cozy cafe interior">
+    </div>
+    <div class="image-section2">
+        <img src="sandwich.jpg" alt="Cozy cafe interior">
+    </div>
+    <div class="image-section2">
+        <img src="ChocolateCake-2-scaled.jpg" alt="Cozy cafe interior">
+    </div>
+
+    <div class="image-section2">
+        <img src="juice-many-2.jpg" alt="Cozy cafe interior">
+    </div>
+    
+    
+   
+    <footer>
+      
+        <div class="social-icons">
+            <a href="https://www.instagram.com/starcafe3571/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/dinesh.dayama.75" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sscomputercollage@gmail.com" target="_blank" title="Gmail"> 
+                <i class="fas fa-envelope"></i>
+            </a>
+            
+            <a href="tel:91+9928414767" class="mobile-contact" title="Contact Us">
+                <i class="bi bi-phone-fill"></i> Call Us: tel:91+9928414767 <br>     9782883521
+            </a>
+        </div>
+        <div>Your comfort is our priority. Join us for a delightful experience</div>
+        
+        <address>KISHANGARH RENWAL (JAIPUR) </address>
+    </footer>
+
+</body>
+</html>
